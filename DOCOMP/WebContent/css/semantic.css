@@ -2873,6 +2873,7 @@
   color: #ffffff;
   text-shadow: none;
   background-image: none;
+  
 }
 
 .ui.teal.button {
@@ -15178,6 +15179,8 @@ a.ui.label {
   padding-left: 2rem;
   border-radius: 0em 0.2857rem 0.2857rem 0em;
   border-color: rgba(0, 0, 0, 0.15);
+  height: 2.5rem;
+  width: 40%;
 }
 
 .ui.ribbon.label:after {

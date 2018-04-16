@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+#msg {
+	color: red;
+}
+
+#msg1 {
+	color: red;
+}
+
+#err{
+	color : red;
+}
+#tab {
+	table-layout: fixed;
+	width: 50%;
+}
+
+.tdedit {
+	width: 70%;
+	margin-left: 0;
+}
+i.icon{
+	::before;
+}

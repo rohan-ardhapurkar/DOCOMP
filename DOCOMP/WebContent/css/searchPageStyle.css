@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.boldfnt {
+	font-weight: bold;
+}
+
+label {
+	font-weight: bolder;
+}
+
+th {
+	font-weight: bold;
+	font-size: large;
+	position: relative;
+}
+
+#mytable {
+	overflow-x: scroll;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+#mytable tbody {
+	overflow-y: scroll;
+}
+
+.content-loader tr td {
+	white-space: nowrap;
+}
