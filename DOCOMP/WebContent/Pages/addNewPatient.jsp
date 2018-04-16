@@ -5,12 +5,74 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>DOCOMP</title>
-<style type="text/css"
-	dir="${pageContext.request.contextPath}/css/semantic.css"></style>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/icon.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/semantic.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/reset.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/site.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/container.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/grid.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/header.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/image.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/menu.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/divider.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/segment.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/form.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/input.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/button.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/list.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/css/message.css">
+
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/semantic.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/form.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/transition.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
-
+	<div class="ui middle aligned center aligned grid">
+		<div class="column">
+			<h2 class="ui teal image header">
+				<div class="content">Log-In to Your Account</div>
+			</h2>
+			<form action="" class="ui large form">
+				<div class="ui stacked segment">
+					<div class="field">
+						<div class="ui left icon input">
+							<i class="user icon"></i> <input type="text" name="username"
+								placeholder="Enter Username" />
+						</div>
+					</div>
+					<div class="field">
+						<div class="ui left icon input">
+							<i class="lock icon"></i> <input type="password" name="password"
+								placeholder="Enter Password" />
+						</div>
+					</div>
+					<div class="ui fluid large teal submit button">Login</div>
+				</div>
+				<div class="ui error message"></div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
