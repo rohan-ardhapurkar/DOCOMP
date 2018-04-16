@@ -48,8 +48,9 @@
 	src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 
 </head>
-<body>
-	<div class="ui middle aligned center aligned grid">
+<body style="background-image: url('${pageContext.request.contextPath}/images/bg.jpg');">
+	<div class="ui middle aligned center aligned grid"
+		style="width: 420px; margin-left: 452px; margin-top: 200px;">
 		<div class="column">
 			<h2 class="ui teal image header">
 				<div class="content">Log-In to Your Account</div>
