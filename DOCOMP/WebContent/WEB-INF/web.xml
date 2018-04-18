@@ -17,4 +17,15 @@
 		<servlet-name>addPatient</servlet-name>
 		<url-pattern>/addPatient</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loginUser</servlet-name>
+		<servlet-class>com.docomp.servlets.PatientServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginUser</servlet-name>
+		<url-pattern>/loginUser</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

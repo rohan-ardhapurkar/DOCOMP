@@ -46,7 +46,14 @@
 	src="${pageContext.request.contextPath}/js/transition.js"></script>
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
-
+<script type="text/javascript">
+function getLoggedIn(){
+	debugger;
+	document.form.action = "loginUser";
+	document.form.method = "POST"
+	document.form.submit();
+}
+</script>
 </head>
 <body style="background-image: url('${pageContext.request.contextPath}/images/bg.jpg');">
 	<div class="ui middle aligned center aligned grid"
@@ -55,7 +62,7 @@
 			<h2 class="ui teal image header">
 				<div class="content">Log-In to Your Account</div>
 			</h2>
-			<form action="" class="ui large form">
+			<form name="form" class="ui large form">
 				<div class="ui stacked segment">
 					<div class="field">
 						<div class="ui left icon input">
@@ -69,9 +76,9 @@
 								placeholder="Enter Password" />
 						</div>
 					</div>
-					<div class="ui fluid large teal submit button">Login</div>
+					<div class="ui fluid large teal submit button" id="loginBtn" onclick="getLoggedIn();" >Login</div>
 				</div>
-				<div class="ui error message"></div>
+				<div class="ui error message" id="errorMsg" ></div>
 			</form>
 		</div>
 	</div>
