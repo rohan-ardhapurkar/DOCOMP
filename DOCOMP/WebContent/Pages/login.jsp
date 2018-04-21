@@ -55,7 +55,7 @@ function getLoggedIn(){
 }
 </script>
 </head>
-<body style="background-image: url('${pageContext.request.contextPath}/images/bg.jpg');">
+<body style="background-image: url('${pageContext.request.contextPath}/images/bg2.gif');">
 	<div class="ui middle aligned center aligned grid"
 		style="width: 420px; margin-left: 452px; margin-top: 200px;">
 		<div class="column">
@@ -84,3 +84,4 @@ function getLoggedIn(){
 	</div>
 </body>
 </html>
+ 

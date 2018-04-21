@@ -958,4 +958,18 @@ select.ui.dropdown {
 /*******************************
         User Overrides
 *******************************/
-
+$('.ui.dropdown')
+.dropdown({
+  values: [
+    {
+      name: 'Male',
+      value: 'male'
+    },
+    {
+      name     : 'Female',
+      value    : 'female',
+      selected : true
+    }
+  ]
+})
+;

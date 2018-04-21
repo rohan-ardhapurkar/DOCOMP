@@ -14,13 +14,15 @@ public class DB {
 
 	public static Connection connect() {
 		try {
-			Class.forName("oracle.jdbc.OracleDriver");
-		} catch (ClassNotFoundException e) {
-			System.out.println("No such named class foound in DB");
+			/*Class.forName("com.mysql.jdbc.Driver");*/
+			com.mysql.jdbc.Driver driver = new com.mysql.jdbc.Driver();
+			DriverManager.registerDriver(driver);
+		}catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "system", "ajay");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/docomp","root","root");
 		} catch (SQLException e) {
 			System.out.println("Error while generating connection with DB");
 			e.printStackTrace();

@@ -27,7 +27,6 @@ public class PatientServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		patient = new PatientBean();
-		patient.setPatientId(Integer.parseInt(request.getParameter("patientId")));
 		patient.setPatientName(request.getParameter("patientName"));
 		patient.setPatientLastName(request.getParameter("patientLastName"));
 		patient.setPatientAddress(request.getParameter("patientAddress"));
@@ -35,9 +34,9 @@ public class PatientServlet extends HttpServlet {
 		patient.setPatientGender(request.getParameter("patientGender"));
 		patient.setPatientHeight(request.getParameter("patientHeight"));
 		patient.setPatientPhone(request.getParameter("patientPhone"));
-		patient.setPatientWeight(request.getParameter("patientPhone"));
-
-		boolean b = patientDao.isPatientAdded(patient);
+		patient.setPatientWeight(request.getParameter("patientWeight"));
+		
+		boolean b =new PatientDAO().isPatientAdded(patient);
 		if (b)
 			System.out.println("Patient Added Successfully .... !");
 		else

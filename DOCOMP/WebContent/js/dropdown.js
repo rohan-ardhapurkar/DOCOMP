@@ -1491,6 +1491,4 @@ $.extend( $.easing, {
     return -c *(t/=d)*(t-2) + b;
   },
 });
-
-
 })( jQuery, window , document );

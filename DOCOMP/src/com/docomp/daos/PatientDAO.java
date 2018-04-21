@@ -29,16 +29,16 @@ public class PatientDAO {
 		conn = DB.connect();
 		if (conn != null) {
 			try {
-				stmt = conn.prepareStatement("insert into patient values(?,?,?,?,?,?,?,?,?)");
-				stmt.setInt(1, patient.getPatientId());
-				stmt.setString(2, patient.getPatientName());
-				stmt.setString(3, patient.getPatientLastName());
-				stmt.setString(4, patient.getPatientAddress());
-				stmt.setString(5, patient.getPatientAge());
-				stmt.setString(6, patient.getPatientGender());
-				stmt.setString(7, patient.getPatientHeight());
-				stmt.setString(8, patient.getPatientWeight());
-				stmt.setString(9, patient.getPatientPhone());
+				stmt = conn.prepareStatement(
+						"insert into patient(patientName,patientLastName,patientGender,patientPhone,patientAddress,patientHeight,patientWeight,patientAge) values(?,?,?,?,?,?,?,?)");
+				stmt.setString(1, patient.getPatientName());
+				stmt.setString(2, patient.getPatientLastName());
+				stmt.setString(3, patient.getPatientGender());
+				stmt.setString(4, patient.getPatientPhone());
+				stmt.setString(5, patient.getPatientAddress());
+				stmt.setString(6, patient.getPatientHeight());
+				stmt.setString(7, patient.getPatientWeight());
+				stmt.setString(8, patient.getPatientAge());
 
 				int result = stmt.executeUpdate();
 				if (result > 0)
