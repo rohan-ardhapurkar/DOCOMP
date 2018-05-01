@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 		
 		if(username.equals("admin") && password.equals("admin")) {
 			System.out.println("Login SUCCESS");
-			RequestDispatcher rd = request.getRequestDispatcher("/Pages/addpatient.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/Pages/CompDashboard.jsp");
 			rd.forward(request, response);
 		}else {
 			RequestDispatcher rd = request.getRequestDispatcher("/Pages/login.jsp");

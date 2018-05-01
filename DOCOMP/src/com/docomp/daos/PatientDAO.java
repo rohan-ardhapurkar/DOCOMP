@@ -13,8 +13,9 @@ import com.docomp.commons.DB;
 /**
  * 
  * @author rohan The Data Access Object class for patient.
+ * @param <function>
  */
-public class PatientDAO {
+public class PatientDAO<function> {
 	private Connection conn = null;
 	private ResultSet rs = null;
 	private PreparedStatement stmt = null;
@@ -109,7 +110,7 @@ public class PatientDAO {
 		conn = DB.connect();
 		try {
 			stmt = conn.prepareStatement("delete patient where patient_id = ?");
-			stmt.setInt(1, patientId);
+  			stmt.setInt(1, patientId);
 
 			int result = stmt.executeUpdate();
 			if (result > 0)
@@ -128,3 +129,5 @@ public class PatientDAO {
 		return false;
 	}
 }
+
+

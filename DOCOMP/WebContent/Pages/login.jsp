@@ -50,7 +50,7 @@
 function getLoggedIn(){
 	debugger;
 	document.form.action = "loginUser";
-	document.form.method = "POST"
+	document.form.method = "POST";
 	document.form.submit();
 }
 </script>
