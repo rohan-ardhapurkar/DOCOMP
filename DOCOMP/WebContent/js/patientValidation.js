@@ -1,17 +1,13 @@
 /**
+ * # Semantic - Form Validation
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributor
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ *
  * 
  */
 
-function validatePhoneField(){
-	debugger;
-	var phoneNo = document.getElementById('phone').value;
-	if (phoneNo == "") {
-		document.getElementById('mandatoryPhone').innerHTML = "contact required";
-		document.getElementById("mandatoryPhone").style.backgroundColor = "";  
-		return false;
-	} else {
-		document.getElementById('mandatoryPhone').innerHTML = "blue";
-
-	}
-	
-}

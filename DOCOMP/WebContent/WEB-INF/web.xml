@@ -5,20 +5,28 @@
     <welcome-file>/Pages/login.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>registerpatient</servlet-name>
-    <servlet-class>com.docomp.servlets.AddButtonServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>registerpatient</servlet-name>
-    <url-pattern>/registerpatient</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <servlet-name>addPatient</servlet-name>
-    <servlet-class>com.docomp.servlets.PatientServlet</servlet-class>
+    <servlet-class>com.docomp.servlets.AddPatientServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>addPatient</servlet-name>
     <url-pattern>/addPatient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>masterPage</servlet-name>
+    <servlet-class>com.docomp.servlets.PatientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>masterPage</servlet-name>
+    <url-pattern>/masterPage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deletePatient</servlet-name>
+    <servlet-class>com.docomp.servlets.DeletePatientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletePatient</servlet-name>
+    <url-pattern>/deletePatient</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>loginUser</servlet-name>
@@ -28,4 +36,5 @@
     <servlet-name>loginUser</servlet-name>
     <url-pattern>/loginUser</url-pattern>
   </servlet-mapping>
+  
 </web-app>

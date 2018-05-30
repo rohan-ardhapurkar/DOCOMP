@@ -54,6 +54,9 @@ function getLoggedIn(){
 	document.form.submit();
 }
 </script>
+
+
+
 </head>
 <body style="background-image: url('${pageContext.request.contextPath}/images/bg2.gif');">
 	<div class="ui middle aligned center aligned grid"
@@ -76,7 +79,9 @@ function getLoggedIn(){
 								placeholder="Enter Password" />
 						</div>
 					</div>
-					<div class="ui fluid large teal submit button" id="loginBtn" onclick="getLoggedIn();" >Login</div>
+					<div class="field">
+					<div class="ui fluid large teal submit button" id="loginBtn"  onclick="getLoggedIn();" >Login</div>
+				</div>
 				</div>
 				<div class="ui error message" id="errorMsg" ></div>
 			</form>

@@ -53,7 +53,10 @@
 	src="${pageContext.request.contextPath}/js/patientValidation.js"></script>
 
 <script type="text/javascript">
+
+
 	function submitForm() {
+	
 		document.form.method = "POST";
 		document.form.action = "addPatient";
 		document.form.submit();
@@ -68,15 +71,15 @@
 		<div class="ui middle aligned center "
 			style="height: 500px; width: 420px; margin-left: 452px; margin-top: 200px;">
 			<h1>Patient Registration Form</h1>
-			<div class="ui inverted segment">
-				<div class="ui inverted form">
+		<div class="ui inverted segment">
+			 <div class="ui inverted form">
 					<div class="two fields">
 						<div class="field">
-							<label>First Name</label> <input type="text"
+							<label>First Name</label> <input type="text" id="Fname"
 								placeholder="First Name" name="patientName">
 						</div>
 						<div class="field">
-							<label>Last Name</label> <input type="text"
+							<label>Last Name</label> <input type="text" id="Lname"
 								placeholder="Last Name" name="patientLastName">
 						</div>
 					</div>
@@ -84,7 +87,7 @@
 						<div class="field">
 							<div class="ui form">
 								<div class="field">
-									<label>Gender</label> <select name="patientGender">
+									<label>Gender</label> <select name="patientGender" id="Gender">
 
 										<option value="">Gender</option>
 										<option value="Male">Male</option>
@@ -103,18 +106,18 @@
 					</div>
 					<div class="two fields">
 						<div class="field">
-							<label>Address</label> <input type="text" placeholder="Address" name="patientAddress" >
+							<label>Address</label> <input type="text"  id="Address" placeholder="Address" name="patientAddress" >
 						</div>
 						<div class="field">
-							<label>Height</label> <input type="text" placeholder="Height" name="patientHeight" >
+							<label>Height</label> <input type="text" id="Height" placeholder="Height" name="patientHeight" >
 						</div>
 					</div>
 					<div class="two fields">
 						<div class="field">
-							<label>Weight</label> <input type="text" placeholder="Weight" name="patientWeight" >
+							<label>Weight</label> <input type="text" id="Weight" placeholder="Weight" name="patientWeight" >
 						</div>
 						<div class="field">
-							<label>Age</label> <input type="text" placeholder="Age" name="patientAge" >
+							<label>Age</label> <input type="text" id="Age" placeholder="Age" name="patientAge" >
 						</div>
 					</div>
 

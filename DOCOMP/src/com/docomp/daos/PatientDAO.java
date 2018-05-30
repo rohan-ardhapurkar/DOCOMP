@@ -109,7 +109,7 @@ public class PatientDAO<function> {
 	public boolean isPatientDeleted(int patientId) {
 		conn = DB.connect();
 		try {
-			stmt = conn.prepareStatement("delete patient where patient_id = ?");
+			stmt = conn.prepareStatement("delete from patient where patientId = ?");
   			stmt.setInt(1, patientId);
 
 			int result = stmt.executeUpdate();
